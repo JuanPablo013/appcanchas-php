@@ -1,0 +1,34 @@
+@use 'base/variables' as v;
+
+.games {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 1rem;
+        border-top: 1px solid v.$blanco;
+
+        p {
+            font-weight: v.$bold;
+            color: v.$verde;
+        }
+
+        span,
+        .service {
+            font-weight: v.$regular;
+            color: v.$blanco;
+        }
+    }
+}
+
+.services {
+    @extend .games;
+
+    .actions {
+        margin: 0;
+    }
+    .button,
+    .delete-button {
+        margin: 0;
+    }
+}
